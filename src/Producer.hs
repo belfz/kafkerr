@@ -14,7 +14,7 @@ data Msg = Msg { key :: Maybe ByteString, value :: Maybe ByteString }
 
 -- Global producer properties
 producerProps :: ProducerProperties
-producerProps = brokersList [BrokerAddress "localhost:9092"]
+producerProps = brokersList [BrokerAddress "localhost:29092"]
              <> logLevel KafkaLogDebug
 
 runProducerExample :: [Msg] -> TopicName -> IO ()

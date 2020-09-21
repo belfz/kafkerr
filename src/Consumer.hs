@@ -10,7 +10,7 @@ import Data.Monoid ((<>))
 import Kafka.Consumer
 
 consumerProps :: ConsumerProperties
-consumerProps = brokersList [BrokerAddress "localhost:9092"]
+consumerProps = brokersList [BrokerAddress "localhost:29092"]
             <> groupId (ConsumerGroupId "consumer_example_group_n")
             <> noAutoCommit
             <> logLevel KafkaLogInfo
